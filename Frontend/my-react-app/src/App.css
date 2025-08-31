@@ -1,0 +1,27 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial}
+.navbar{background:#FD6569;padding:10px}
+.navbar h1{color:#000}
+.container{padding:10px}
+.row{display:flex;flex-wrap:wrap}
+.book-card{padding:15px;width:280px;max-width:90%;background:#000;border-radius:10px;color:#fff;margin:15px;display:inline-block;vertical-align:top}
+.book-card h2{color:#FD6569;font-size:1.25rem;margin-bottom:4px}
+.book-card h5{margin:0 0 8px 0;color:#ccc;font-weight:400}
+.book-card p{line-height:1.4;font-size:0.95rem}
+.book-card button{background:#FD6569;color:#000;border-radius:10px;padding:5px 10px;border:none;margin-top:10px;cursor:pointer}
+.add-button{background:#FD6569;color:#000;border-radius:100%;padding:20px 30px;font-size:40px;border:none;position:fixed;bottom:30px;right:30px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.overlay{background:#000;opacity:.8;position:fixed;inset:0;z-index:1;display:none}
+.popup{background:#FD6569;width:min(600px,90vw);padding:40px;border-radius:10px;position:fixed;top:15%;left:50%;transform:translateX(-50%);z-index:2;display:none}
+.popup input,.popup textarea{background:transparent;border:none;width:100%;margin:5px;padding:8px;font-size:18px;border-radius:4px}
+.popup input{border-bottom:2px solid #000}
+.popup textarea{border:2px solid #000}
+.popup input::placeholder,.popup textarea::placeholder{color:#000}
+.popup button{background:#000;color:#fff;border:none;padding:10px 20px;border-radius:10px;margin:5px;cursor:pointer}
+.popup input:focus,.popup textarea:focus{outline:none}
+.actions{display:flex;gap:8px;margin-top:8px}
+.edit-row{display:flex;gap:8px;margin-top:8px}
+.edit-row input, .edit-row textarea{border:1px solid #ccc;padding:6px;border-radius:6px}
+@media (max-width:700px){
+.book-card{width:90%;margin:10px auto;display:block}
+.popup{top:10%}
+}
